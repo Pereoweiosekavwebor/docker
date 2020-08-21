@@ -1,0 +1,13 @@
+# from base image node
+FROM ubuntu:18.04
+
+# command executable and version
+CMD ["-v"]
+ENTRYPOINT ["node"]
+
+# from base image node
+FROM ubuntu:18.04
+
+# command executable and version
+CMD ["-v"]
+ENTRYPOINT [ubuntu:18.04"]

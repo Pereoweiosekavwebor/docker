@@ -1,0 +1,15 @@
+# from base image node
+FROM node:8.11-slim
+FROM ubuntu:18.04
+ENV workdirectory /usr/node
+
+WORKDIR $workdirectory
+WORKDIR app
+
+COPY package.json .
+RUN ls -ll
+
+RUN pwd
+
+# command executable and version
+ENTRYPOINT ["ubuntu:18.04"]

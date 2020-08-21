@@ -1,0 +1,21 @@
+# from base image node
+FROM node:8.11-slim
+
+WORKDIR /usr/node
+WORKDIR app
+
+RUN pwd
+
+# command executable and version
+ENTRYPOINT ["node"]
+
+# from base image node
+FROM ubuntu:18.04
+
+WORKDIR /usr/node
+WORKDIR app
+
+RUN pwd
+
+# command executable and version
+ENTRYPOINT ["ubuntu:18.04"]
